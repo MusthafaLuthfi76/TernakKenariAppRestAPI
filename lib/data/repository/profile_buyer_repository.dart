@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:canary_app/data/model/request/buyer/buyer_profile_request_model.dart';
 import 'package:canary_app/data/model/response/buyer/buyer_profile_response_model.dart';
 import 'package:canary_app/services/service_http_client.dart';
 import 'package:dartz/dartz.dart';
@@ -14,7 +15,7 @@ class ProfileBuyerRepository {
     try {
       final response = await _serviceHttpClient.postWihToken(
         "buyer/profile",
-        requestModel.toJson(),
+        requestModel.toMap(),
       );
 
       if (response.statusCode == 201) {

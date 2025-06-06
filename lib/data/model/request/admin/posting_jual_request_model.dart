@@ -13,6 +13,19 @@ class PostingJualRequestModel {
         this.deskripsi,
     });
 
+    PostingJualRequestModel copyWith({
+        int? burungId,
+        String? burungType,
+        int? harga,
+        String? deskripsi,
+    }) => 
+        PostingJualRequestModel(
+            burungId: burungId ?? this.burungId,
+            burungType: burungType ?? this.burungType,
+            harga: harga ?? this.harga,
+            deskripsi: deskripsi ?? this.deskripsi,
+        );
+
     factory PostingJualRequestModel.fromJson(String str) => PostingJualRequestModel.fromMap(json.decode(str));
 
     String toJson() => json.encode(toMap());

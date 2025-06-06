@@ -13,7 +13,7 @@ class PrifileAdminRepository {
   PrifileAdminRepository(this._serviceHttpClient);
 
   Future<Either<String, AdminProfileResponseModel>> addProfile(
-    AdminProfileRequestModel requestModel,
+    AdminProfileResponseModel requestModel,
   ) async {
     try {
       final response = await _serviceHttpClient.postWihToken(

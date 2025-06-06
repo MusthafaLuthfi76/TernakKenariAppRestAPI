@@ -25,6 +25,31 @@ class IndukRequestModel {
         this.id,
     });
 
+    IndukRequestModel copyWith({
+        int? adminId,
+        String? noRing,
+        DateTime? tanggalLahir,
+        String? jenisKelamin,
+        String? jenisKenari,
+        dynamic keterangan,
+        String? gambarInduk,
+        DateTime? updatedAt,
+        DateTime? createdAt,
+        int? id,
+    }) => 
+        IndukRequestModel(
+            adminId: adminId ?? this.adminId,
+            noRing: noRing ?? this.noRing,
+            tanggalLahir: tanggalLahir ?? this.tanggalLahir,
+            jenisKelamin: jenisKelamin ?? this.jenisKelamin,
+            jenisKenari: jenisKenari ?? this.jenisKenari,
+            keterangan: keterangan ?? this.keterangan,
+            gambarInduk: gambarInduk ?? this.gambarInduk,
+            updatedAt: updatedAt ?? this.updatedAt,
+            createdAt: createdAt ?? this.createdAt,
+            id: id ?? this.id,
+        );
+
     factory IndukRequestModel.fromJson(String str) => IndukRequestModel.fromMap(json.decode(str));
 
     String toJson() => json.encode(toMap());

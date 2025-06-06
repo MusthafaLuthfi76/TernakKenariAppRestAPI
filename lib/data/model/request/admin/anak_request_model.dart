@@ -21,6 +21,27 @@ class AnakRequestModel {
         this.ibuNoRing,
     });
 
+    AnakRequestModel copyWith({
+        int? id,
+        String? noRing,
+        DateTime? tanggalLahir,
+        String? jenisKelamin,
+        String? jenisKenari,
+        dynamic gambarAnak,
+        String? ayahNoRing,
+        String? ibuNoRing,
+    }) => 
+        AnakRequestModel(
+            id: id ?? this.id,
+            noRing: noRing ?? this.noRing,
+            tanggalLahir: tanggalLahir ?? this.tanggalLahir,
+            jenisKelamin: jenisKelamin ?? this.jenisKelamin,
+            jenisKenari: jenisKenari ?? this.jenisKenari,
+            gambarAnak: gambarAnak ?? this.gambarAnak,
+            ayahNoRing: ayahNoRing ?? this.ayahNoRing,
+            ibuNoRing: ibuNoRing ?? this.ibuNoRing,
+        );
+
     factory AnakRequestModel.fromJson(String str) => AnakRequestModel.fromMap(json.decode(str));
 
     String toJson() => json.encode(toMap());

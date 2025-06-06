@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'dart:developer';
 
+import 'package:canary_app/data/model/request/admin/posting_jual_request_model.dart';
 import 'package:canary_app/data/model/response/burung_semua_tersedia_model.dart';
 import 'package:canary_app/data/model/response/get_all_burung_response_model.dart';
 import 'package:canary_app/services/service_http_client.dart';
@@ -16,7 +17,7 @@ class PostingRepostory {
     try {
       final response = await _serviceHttpClient.postWihToken(
         'admin/posting-jual',
-        requestModel.toJson(),
+        requestModel.toMap(),
       );
       final jsonResponse = json.decode(response.body);
       if (response.statusCode == 201) {
