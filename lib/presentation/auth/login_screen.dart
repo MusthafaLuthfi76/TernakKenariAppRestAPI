@@ -3,7 +3,7 @@ import 'package:canary_app/core/components/custom_text_field.dart';
 import 'package:canary_app/core/components/spaces.dart';
 import 'package:canary_app/core/constants/colors.dart';
 import 'package:canary_app/core/core.dart';
-import 'package:canary_app/data/model/request/buyer/login_request_model.dart';
+import 'package:canary_app/data/model/request/auth/login_request_model.dart';
 import 'package:canary_app/presentation/auth/register_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
