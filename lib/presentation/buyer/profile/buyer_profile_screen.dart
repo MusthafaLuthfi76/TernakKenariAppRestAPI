@@ -1,4 +1,5 @@
 import 'package:canary_app/presentation/buyer/profile/bloc/profile_buyer_bloc.dart';
+import 'package:canary_app/presentation/buyer/profile/widget/profile_buyer_form.dart';
 import 'package:canary_app/presentation/buyer/profile/widget/profile_view_buyer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
