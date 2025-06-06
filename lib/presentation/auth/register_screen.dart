@@ -3,10 +3,12 @@ import 'package:canary_app/core/components/custom_text_field.dart';
 import 'package:canary_app/core/components/spaces.dart';
 import 'package:canary_app/core/constants/colors.dart';
 import 'package:canary_app/core/core.dart';
+import 'package:canary_app/presentation/auth/bloc/register/bloc/register_bloc.dart';
 import 'package:canary_app/presentation/auth/login_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});

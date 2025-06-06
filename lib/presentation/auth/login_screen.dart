@@ -4,10 +4,13 @@ import 'package:canary_app/core/components/spaces.dart';
 import 'package:canary_app/core/constants/colors.dart';
 import 'package:canary_app/core/core.dart';
 import 'package:canary_app/data/model/request/auth/login_request_model.dart';
+import 'package:canary_app/presentation/auth/bloc/login/login_bloc.dart';
 import 'package:canary_app/presentation/auth/register_screen.dart';
+import 'package:canary_app/presentation/buyer/profile/buyer_profile_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});

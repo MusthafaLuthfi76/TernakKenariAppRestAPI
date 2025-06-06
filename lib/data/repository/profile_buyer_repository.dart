@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:canary_app/data/model/response/buyer/buyer_profile_response_model.dart';
 import 'package:canary_app/services/service_http_client.dart';
+import 'package:dartz/dartz.dart';
 
 class ProfileBuyerRepository {
   final ServiceHttpClient _serviceHttpClient;

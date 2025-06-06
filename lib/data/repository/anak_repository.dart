@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:canary_app/data/model/response/get_all_anak_response.dart';
 import 'package:canary_app/services/service_http_client.dart';
+import 'package:dartz/dartz.dart';
 
 class AnakRepository {
   final ServiceHttpClient _serviceHttpClient;

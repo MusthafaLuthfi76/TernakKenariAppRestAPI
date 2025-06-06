@@ -2,6 +2,7 @@ import 'dart:convert';
 
 import 'package:canary_app/data/model/response/get_all_induk_response.dart';
 import 'package:canary_app/services/service_http_client.dart';
+import 'package:dartz/dartz.dart';
 
 class IndukRepository {
   final ServiceHttpClient _serviceHttpClient;

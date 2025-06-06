@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:canary_app/data/model/response/burung_semua_tersedia_model.dart';
 import 'package:canary_app/services/service_http_client.dart';
+import 'package:dartz/dartz.dart';
 
 class GetAllBurungTersediaRepository {
   final ServiceHttpClient httpClient;
