@@ -60,6 +60,13 @@ class _BuyerHomeScreenState extends State<BuyerHomeScreen> {
           ),
         ],
       ),
+      body: RefreshIndicator(onRefresh: () async {
+          // Refresh data burung tersedia
+          context.read<GetBurungTersediaBloc>().add(
+            GetAllBurungTersediaEvent(),
+          );
+        }, 
+        child: child ),
     );
   }
 }
